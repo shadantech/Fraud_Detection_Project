@@ -7,11 +7,13 @@
 ---
 
 ## Project Objective
+
 The objective of this project is to detect fraudulent credit card transactions using Python. Fraud transactions are extremely rare, making the dataset highly imbalanced. This project demonstrates the use of **unsupervised anomaly detection techniques** to identify fraud patterns and visualize anomalies for better interpretability.
 
 ---
 
 ## Tech Stack
+
 - **Languages:** Python 3.11  
 - **Data Analysis & Visualization:** Pandas, NumPy, Matplotlib, Seaborn  
 - **Machine Learning:** Scikit-learn (Isolation Forest, PCA)  
@@ -22,6 +24,7 @@ The objective of this project is to detect fraudulent credit card transactions u
 ---
 
 ## Dataset
+
 The project uses the **Credit Card Fraud Detection Dataset** from Kaggle:
 
 - Source: [Kaggle – Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
@@ -36,6 +39,7 @@ The project uses the **Credit Card Fraud Detection Dataset** from Kaggle:
 ---
 
 ## Models Used
+
 ### 1. Isolation Forest
 - Unsupervised tree-based anomaly detection algorithm
 - Isolates outliers by partitioning data using random trees
@@ -48,7 +52,8 @@ The project uses the **Credit Card Fraud Detection Dataset** from Kaggle:
 
 ---
 
-### Data Preprocessing
+## Data Preprocessing
+
 - Scaled `Amount` and `Time` features using `StandardScaler`
 - Kept PCA features (V1–V28) as-is
 - Prepared feature matrix `X` and target vector `y`
@@ -56,7 +61,8 @@ The project uses the **Credit Card Fraud Detection Dataset** from Kaggle:
 
 ---
 
-### Evaluation Results
+## Evaluation Results
+
 - Evaluated using **confusion matrix** and **classification report**
 - Key metric focus: **Recall for fraud class** (class 1)
 - Isolation Forest detected anomalies effectively, Autoencoder showed higher precision in reconstructing normal patterns
@@ -65,6 +71,7 @@ The project uses the **Credit Card Fraud Detection Dataset** from Kaggle:
 ---
 
 ## Visualizations
+
 1. **Class Distribution**
    - Shows severe imbalance between normal and fraud transactions
    ![Class Distribution](Class_Distribution.png)
@@ -84,6 +91,7 @@ The project uses the **Credit Card Fraud Detection Dataset** from Kaggle:
 ---
 
 ## How to Run
+
 1. Install dependencies:
 
 ```bash
@@ -97,6 +105,7 @@ pip install -r requirements.txt
 ---
 
 ## Conclusion
+
 - Built an end-to-end credit card fraud detection system using Isolation Forest and Autoencoder
 - Handled highly imbalanced dataset and scaled features professionally
 - Visualized anomalies with PCA for clear insights
