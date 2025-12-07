@@ -1,19 +1,19 @@
-# 🚨 Credit Card Fraud Detection
+# 💳 Credit Card Fraud Detection
 
 [![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15-orange?logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
 [![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.3-green?logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
 
+Detected fraud transactions with Isolation Forest (Recall 0.82) and Autoencoder (Precision 0.91) on a 284k transaction dataset.
+
 ---
 
-## Project Objective
-
+## 📌 Overview
 The objective of this project is to detect fraudulent credit card transactions using Python. Fraud transactions are extremely rare, making the dataset highly imbalanced. This project demonstrates the use of **unsupervised anomaly detection techniques** to identify fraud patterns and visualize anomalies for better interpretability.
 
 ---
 
-## Tech Stack
-
+## 📊 Tech Stack
 - **Languages:** Python 3.11  
 - **Data Analysis & Visualization:** Pandas, NumPy, Matplotlib, Seaborn  
 - **Machine Learning:** Scikit-learn (Isolation Forest, PCA)  
@@ -23,8 +23,7 @@ The objective of this project is to detect fraudulent credit card transactions u
 
 ---
 
-## Dataset
-
+## 📂 Dataset
 The project uses the **Credit Card Fraud Detection Dataset** from Kaggle:
 
 - Source: [Kaggle – Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
@@ -38,15 +37,15 @@ The project uses the **Credit Card Fraud Detection Dataset** from Kaggle:
 
 ---
 
-## Models Used
+## 🧠 Models Used
 
-### 1. Isolation Forest
+### 1️⃣ Isolation Forest
 - Isolation Forest Recall (Fraud): 0.82
 - Unsupervised tree-based anomaly detection algorithm
 - Isolates outliers by partitioning data using random trees
 - Flags transactions as anomalies (fraud) without using class labels
 
-### 2. Autoencoder
+### 2️⃣ Autoencoder
 - Autoencoder Precision (Fraud): 0.91
 - Neural network-based unsupervised model
 - Learns to reconstruct normal transaction patterns
@@ -54,7 +53,7 @@ The project uses the **Credit Card Fraud Detection Dataset** from Kaggle:
 
 ---
 
-## Data Preprocessing
+## 🔧 Data Preprocessing
 
 - Scaled `Amount` and `Time` features using `StandardScaler`
 - Kept PCA features (V1–V28) as-is
@@ -63,7 +62,7 @@ The project uses the **Credit Card Fraud Detection Dataset** from Kaggle:
 
 ---
 
-## Evaluation Results
+## 📈 Evaluation Results
 
 - Evaluated using **confusion matrix** and **classification report**
 - Key metric focus: **Recall for fraud class** (class 1)
@@ -72,31 +71,31 @@ The project uses the **Credit Card Fraud Detection Dataset** from Kaggle:
 
 ---
 
-## Visualizations
+## 📊 Visualizations
 
-1. **Class Distribution**
+### 1️⃣ Class Distribution
 Shows severe imbalance between normal and fraud transactions
 
 ![Class Distribution](Class_Distribution.png)
 
-2. **Reconstruction Error Histogram (Autoencoder)**
+### 2️⃣ Reconstruction Error Histogram (Autoencoder)
 Highlights difference in reconstruction errors between normal and fraud transactions
 
 ![Reconstruction Error](Autoencoder_Reconstruction_Error.png)
 
-3. **PCA Scatter Plot**
+### 3️⃣ PCA Scatter Plot
 Visualizes fraud (outliers) and normal transactions in 2D
 
 ![PCA Visualization](PCA_Scatter_Plot.png)
 
-4. **Autoencoder Predicted Anomalies (PCA)**
+### 4️⃣ Autoencoder Predicted Anomalies (PCA)
 Shows model’s prediction overlay on PCA-reduced data
 
 ![Autoencoder Anomalies](Autoencoder_Predicted_Anomalies(PCA).png)
 
 ---
 
-## How to Run
+## ⚙️ How to Run
 
 1. Install dependencies:
 
