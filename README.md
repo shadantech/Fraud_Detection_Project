@@ -75,20 +75,24 @@ The project uses the **Credit Card Fraud Detection Dataset** from Kaggle:
 ## Visualizations
 
 1. **Class Distribution**
-   - Shows severe imbalance between normal and fraud transactions
-   ![Class Distribution](Class_Distribution.png)
+Shows severe imbalance between normal and fraud transactions
+
+![Class Distribution](Class_Distribution.png)
 
 2. **Reconstruction Error Histogram (Autoencoder)**
-   - Highlights difference in reconstruction errors between normal and fraud transactions
-   ![Reconstruction Error](Autoencoder_Reconstruction_Error.png)
+Highlights difference in reconstruction errors between normal and fraud transactions
+
+![Reconstruction Error](Autoencoder_Reconstruction_Error.png)
 
 3. **PCA Scatter Plot**
-   - Visualizes fraud (outliers) and normal transactions in 2D
-   ![PCA Visualization](PCA_Scatter_Plot.png)
+Visualizes fraud (outliers) and normal transactions in 2D
+
+![PCA Visualization](PCA_Scatter_Plot.png)
 
 4. **Autoencoder Predicted Anomalies (PCA)**
-   - Shows model’s prediction overlay on PCA-reduced data
-   ![Autoencoder Anomalies](Autoencoder_Predicted_Anomalies(PCA).png)
+Shows model’s prediction overlay on PCA-reduced data
+
+![Autoencoder Anomalies](Autoencoder_Predicted_Anomalies(PCA).png)
 
 ---
 
