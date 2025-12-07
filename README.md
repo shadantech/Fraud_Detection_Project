@@ -1,4 +1,4 @@
-# Credit Card Fraud Detection 🚨
+# 🚨 Credit Card Fraud Detection
 
 [![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15-orange?logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
