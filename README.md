@@ -41,11 +41,13 @@ The project uses the **Credit Card Fraud Detection Dataset** from Kaggle:
 ## Models Used
 
 ### 1. Isolation Forest
+- Isolation Forest Recall (Fraud): 0.82
 - Unsupervised tree-based anomaly detection algorithm
 - Isolates outliers by partitioning data using random trees
 - Flags transactions as anomalies (fraud) without using class labels
 
 ### 2. Autoencoder
+- Autoencoder Precision (Fraud): 0.91
 - Neural network-based unsupervised model
 - Learns to reconstruct normal transaction patterns
 - Transactions with **high reconstruction error** are flagged as fraud
