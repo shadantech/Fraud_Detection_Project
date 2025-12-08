@@ -13,19 +13,8 @@ The objective of this project is to detect fraudulent credit card transactions u
 
 ---
 
-## 📊 Tech Stack
-- **Languages:** Python 3.11  
-- **Data Analysis & Visualization:** Pandas, NumPy, Matplotlib, Seaborn  
-- **Machine Learning:** Scikit-learn (Isolation Forest, PCA)  
-- **Deep Learning:** TensorFlow / Keras (Autoencoder)  
-- **Environment:** Jupyter Notebook, VS Code  
-- **Version Control:** Git / GitHub
-
----
-
 ## 📂 Dataset
 The project uses the **Credit Card Fraud Detection Dataset** from Kaggle:
-
 - Source: [Kaggle – Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
 - Number of transactions: 284,807
 - Features: 
@@ -38,7 +27,6 @@ The project uses the **Credit Card Fraud Detection Dataset** from Kaggle:
 ---
 
 ## 🧠 Models Used
-
 ### 1️⃣ Isolation Forest
 - Isolation Forest Recall (Fraud): 0.82
 - Unsupervised tree-based anomaly detection algorithm
@@ -54,7 +42,6 @@ The project uses the **Credit Card Fraud Detection Dataset** from Kaggle:
 ---
 
 ## 🔧 Data Preprocessing
-
 - Scaled `Amount` and `Time` features using `StandardScaler`
 - Kept PCA features (V1–V28) as-is
 - Prepared feature matrix `X` and target vector `y`
@@ -63,7 +50,6 @@ The project uses the **Credit Card Fraud Detection Dataset** from Kaggle:
 ---
 
 ## 📈 Evaluation Results
-
 - Evaluated using **confusion matrix** and **classification report**
 - Key metric focus: **Recall for fraud class** (class 1)
 - Isolation Forest detected anomalies effectively, Autoencoder showed higher precision in reconstructing normal patterns
@@ -96,7 +82,6 @@ Shows model’s prediction overlay on PCA-reduced data
 ---
 
 ## ⚙️ How to Run
-
 1. Install dependencies:
 
 ```bash
@@ -109,8 +94,17 @@ pip install -r requirements.txt
 
 ---
 
-## Conclusion
+## 📊 Tech Stack
+- **Languages:** Python 3.11  
+- **Data Analysis & Visualization:** Pandas, NumPy, Matplotlib, Seaborn  
+- **Machine Learning:** Scikit-learn (Isolation Forest, PCA)  
+- **Deep Learning:** TensorFlow / Keras (Autoencoder)  
+- **Environment:** Jupyter Notebook, VS Code  
+- **Version Control:** Git / GitHub
 
+---
+
+## 🏁 Conclusion
 - Built an end-to-end credit card fraud detection system using Isolation Forest and Autoencoder
 - Handled highly imbalanced dataset and scaled features professionally
 - Visualized anomalies with PCA for clear insights
